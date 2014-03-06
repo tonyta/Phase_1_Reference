@@ -8,3 +8,5 @@
 
 4. Law of Demeter: Your objects should only be talking to their immediate neighbors.
    If you have Groves and Trees and Fruits, Groves should not be talking to Fruits.
+
+5. Check your dependencies. How much do each of your objects know about the others?
