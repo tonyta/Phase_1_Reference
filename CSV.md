@@ -13,8 +13,11 @@ We are mostly reading CSV from a file. There are two main methods for this:
 - `#foreach`: which reads one row at a time (you probably want this one)
 For either, you will pass the path to the csv file as a string. For example:
 `CSV.foreach('path_to/my_file.csv')`
-#### #read
+
+#### read
+
 `read` will return and array of arrays of strings. For example, if your file (`people.csv`) looks like:
+
 ```
 George,Smith,31
 Samuel,West,29
@@ -26,8 +29,24 @@ then...
 require 'csv'
 
 CSV.read('people.csv')
-# => [ [ 'George',  'Smith',  31 ],
-#      [ 'Samuel',  'West',   29 ],
-#      [ 'Brenda',  'Byrnes', 43 ],
-#      [ 'Matthew', 'Conner', 32 ] ]
-``
+# => [ [ 'George',  'Smith',  '31' ],
+#      [ 'Samuel',  'West',   '29' ],
+#      [ 'Brenda',  'Byrnes', '43' ],
+#      [ 'Matthew', 'Conner', '32' ] ]
+```
+
+#### foreach
+
+`foreach` will return a CSV enumerable object that will take a block:
+``` ruby
+CSV.read('people.csv') do |row|
+  puts row.join(' ')
+end
+```
+The output would be:
+```
+George Smith 31
+Samuel West 29
+Brenda Byrnes 43
+Matthew Conner 32
+```
