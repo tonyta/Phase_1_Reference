@@ -2,7 +2,7 @@ Phase 1 Cheatsheet
 =================
 This is a quick reference to all the stuff we touched upon in Phase 1
 ##General Tips
-#### MVP: *minimal* viable product
+#### MVP: *minimum* viable product
 Only implement the features to spec, *nothing* more. Otherwise you are wasting precious time.
 #### WWSMD: What Would Sandi Metz Do?
 Are your methods only doing one thing?
