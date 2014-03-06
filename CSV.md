@@ -50,3 +50,34 @@ Samuel West 29
 Brenda Byrnes 43
 Matthew Conner 32
 ```
+
+### Options
+
+#### Headers
+
+Passing the argument `headers: true` will make CSV treat the first row as the header. Instead of an objects that act like arrays, the returned objects will act like hashes. *Careful: without other arguments, the keys will be strings!*
+
+For example, `people_headers.csv':
+```
+first_name, last_name, age
+George,Smith,31
+Samuel,West,29
+Brenda,Byrnes,43
+Matthew,Conner,32
+```
+
+``` ruby
+require 'csv'
+
+CSV.read('people.csv, ')
+# =>  #<CSV::Table mode:col_or_row row_count:5>
+
+CSV.read('people.csv, ')[0]
+# => #<CSV::Row "first_name":"George" "last_name":"Smith" "age":"31">
+
+CSV.read('people.csv, ')[0]['first_name']
+# => "George"
+
+```
+
+Turning on headers while using `#foreach` yields similar results but in an enumberable.
