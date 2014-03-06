@@ -15,7 +15,7 @@ html_file.close
 
 # Traversing the DOM
 ### capturing html elements
-noko_obj.css("css_selector")
+noko_obj.css("css_selector")     
 => array of matching html elements
 
 ### extracting text node
