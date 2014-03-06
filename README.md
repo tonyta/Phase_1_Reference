@@ -10,5 +10,6 @@ Are your methods only doing one thing?
 Okay, your code works. But is this the best, most elegant implementation? Are there any enumerable methods that makes your code more readable?
 
 ## Contents
-[Enumerables](https://github.com/tonyta/Phase_1_Reference/Enumerables.md)
-[CSV](https://github.com/tonyta/Phase_1_Reference/CSV.md)
+[Enumerables](https://github.com/tonyta/Phase_1_Reference/blob/master/Enumerables.md)
+
+[CSV](https://github.com/tonyta/Phase_1_Reference/blob/master/CSV.md)
