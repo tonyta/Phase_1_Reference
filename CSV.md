@@ -14,7 +14,7 @@ We are mostly reading CSV from a file. There are two main methods for this:
 For either, you will pass the path to the csv file as a string. For example:
 `CSV.foreach('path_to/my_file.csv')`
 
-#### read
+#### #read
 
 `read` will return and array of arrays of strings. For example, if your file (`people.csv`) looks like:
 
@@ -35,7 +35,7 @@ CSV.read('people.csv')
 #      [ 'Matthew', 'Conner', '32' ] ]
 ```
 
-#### foreach
+#### #foreach
 
 `foreach` will return a CSV enumerable object that will take a block:
 ``` ruby

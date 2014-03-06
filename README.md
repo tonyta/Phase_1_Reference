@@ -18,6 +18,8 @@ Okay, your code works. But is this the best, most elegant implementation? Are th
 
 [CSV](https://github.com/tonyta/Phase_1_Reference/blob/master/CSV.md)
 
+[Nokogiri](https://github.com/tonyta/Phase_1_Reference/blob/master/Nokogiri.md)
+
 [ARGV](https://github.com/tonyta/Phase_1_Reference/blob/master/ARGV.md)
 
 [OOP: Inheritance](https://github.com/tonyta/Phase_1_Reference/blob/master/Inheritance.md)
